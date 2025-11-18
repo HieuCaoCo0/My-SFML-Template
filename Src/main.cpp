@@ -1,6 +1,8 @@
 #include <SFML/Graphics.hpp>
+#include <header.h>
 
 int main() {
+    hello();
     sf::RenderWindow window(sf::VideoMode({ 800, 600 }), "My window");
 
     sf::CircleShape circle(100.f);

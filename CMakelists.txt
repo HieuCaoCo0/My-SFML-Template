@@ -43,7 +43,7 @@ else()
 	target_compile_definitions("${CMAKE_PROJECT_NAME}" PUBLIC DEVELOPMENT_BUILD=1) 
 endif()
 
-target_sources("${CMAKE_PROJECT_NAME}" PRIVATE ${MY_SOURCES})
+target_sources("${CMAKE_PROJECT_NAME}" PRIVATE ${MY_SOURCES} "include/header.h" "Src/header.cpp")
 
 if(MSVC) # If using the VS compiler...
 
